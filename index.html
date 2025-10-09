@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kalpana Shavla | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f2f2f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: #6a11cb;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #2575fc;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a11cb;
+      text-align: center;
+    }
+
+    .project {
+      background: white;
+      border-radius: 10px;
+      padding: 25px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
+      transition: transform 0.2s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+    }
+
+    .project h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .project p {
+      color: #555;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #6a11cb;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    a.button:hover {
+      background-color: #2575fc;
+    }
+
+    footer {
+      background: #6a11cb;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        margin: 0 10px;
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kalpana Shavla</h1>
+  <p>Frontend Developer | Software Tester (QA)</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#frontend">Frontend</a>
+  <a href="#testing">Testing</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I'm a Computer Science Engineering student passionate about Frontend Development and Software Testing.
+    I love creating clean web interfaces and testing applications for performance and bugs. I'm looking for opportunities to grow as a fresher in either domain.
+  </p>
+  <p><strong>Skills:</strong> HTML, CSS, JavaScript, Angular, Python, MySQL, Manual Testing, Excel, Power BI</p>
+  <a class="button" href="https://drive.google.com/file/d/1ymdUR0CQvcqHEZclD71s51AWTB4uLR_p/view?usp=drivesdk" target="_blank">Download Resume</a>
+</section>
+
+<section id="frontend">
+  <h2>Frontend Projects</h2>
+
+<div class="project">
+  <h2>Faculty Leave Management System (Frontend)</h2>
+  <p>This is a frontend web application built using React. It allows faculty to log in, submit leave requests, and view leave status. Test cases were also written for key functionalities like login validation, leave request submission, and bug reporting.</p>
+  <ul>
+    <li>✅ Built with React, HTML, CSS</li>
+    <li>✅ Functional login and leave request forms</li>
+    <li>✅ Responsive UI</li>
+    <li>✅ Test cases documented (PDF/Excel)</li>
+  </ul>
+   <a href="https://kalpana-shavla5.github.io/faculty-leave-management/" target="_blank">🌐 Live Demo</a><br>
+  <a href="https://github.com/kalpana-shavla5/faculty-leave-management" target="_blank">📁 GitHub Code</a>
+  <a href="/downloads/TestCases.xlsx" download>📄 Test Cases Document</a>
+</div>
+
+</section>
+
+<section id="testing">
+  <h2>Software Testing Projects</h2>
+
+  <div class="project">
+    <h3>Faculty Leave Management System – QA</h3>
+    <p>
+      This project includes test documentation for two main modules: Login and Leave Request. Each module was tested using detailed test cases and bug tracking reports.
+    </p>
+    <a class="button" href="https://docs.google.com/spreadsheets/d/1AxvFU8J5g12RP7FDrsGBh2RPr1iN6YQI/edit?gid=1911443318#gid=1911443318" target="_blank">Login Module – Test Cases</a>
+    <a class="button" href="https://docs.google.com/spreadsheets/d/1CBtvttqlUhPxKdBYVgO8rXjjRmUYqhx6/edit?gid=1503145404#gid=1503145404" target="_blank">Leave Module – Test Cases</a>
+    <a class="button" href="https://docs.google.com/spreadsheets/d/1lnsauAVBGjEbi-y6MHL39A5gASkzO0DQ/edit?gid=2032184583#gid=2032184583" target="_blank">Bug Report Document</a>
+  </div>
+
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: kalpanashavla5@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/kalpana-shavla-purushothaman" target="_blank">linkedin.com/in/kalpana-shavla-purushothaman</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2025 Kalpana Shavla. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
