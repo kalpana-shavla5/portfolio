@@ -316,17 +316,38 @@
   </section>
 
   <footer class="site-footer">
-    <div class="footer__brand">
-      <span class="cube" aria-hidden="true">
-        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
-        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
-      </span>
-      <strong>Kalpana Shavla P</strong>
-    </div>
-    <p class="muted">© <span id="year"></span> — Crafted with clean code & accessibility in mind.</p>
+    © 2025 Kalpana Shavla. All rights reserved.
   </footer>
 
-  <script src="script.js"></script>
+  <!-- ✅ JavaScript starts here -->
+  <script>
+    /* --- Scroll Reveal Animation --- */
+    const reveals = document.querySelectorAll(".reveal");
+    window.addEventListener("scroll", () => {
+      reveals.forEach((el) => {
+        const windowHeight = window.innerHeight;
+        const revealTop = el.getBoundingClientRect().top;
+        const revealPoint = 150;
+        if (revealTop < windowHeight - revealPoint) el.classList.add("show");
+        else el.classList.remove("show");
+      });
+    });
+
+    /* --- Scroll Progress Bar --- */
+    const progressBar = document.querySelector(".bar");
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollPercent = (scrollTop / scrollHeight) * 100;
+      progressBar.style.width = scrollPercent + "%";
+    });
+
+    /* --- Mobile Nav Toggle --- */
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".nav");
+    navToggle.addEventListener("click", () => nav.classList.toggle("open"));
+  </script>
+  <!-- ✅ JavaScript ends here -->
+
 </body>
 </html>
-
