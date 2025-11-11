@@ -1,208 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kalpana Shavla | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f2f2f2;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background: linear-gradient(135deg, #6a11cb, #2575fc);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      font-weight: 300;
-    }
-
-    nav {
-      background-color: #fff;
-      padding: 15px;
-      text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav a {
-      color: #6a11cb;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #2575fc;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: #6a11cb;
-      text-align: center;
-    }
-
-    .project {
-      background: white;
-      border-radius: 10px;
-      padding: 25px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.07);
-      transition: transform 0.2s ease;
-    }
-
-    .project:hover {
-      transform: translateY(-4px);
-    }
-
-    .project h3 {
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      color: #555;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #6a11cb;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    a.button:hover {
-      background-color: #2575fc;
-    }
-
-    footer {
-      background: #6a11cb;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      margin-top: 40px;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      nav a {
-        margin: 0 10px;
-        display: inline-block;
-        margin-bottom: 10px;
-      }
-
-      section {
-        padding: 20px;
-      }
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalpana Shavla P — Portfolio</title>
+  <meta name="description" content="Portfolio of Kalpana Shavla P — Web Developer (Frontend, WordPress, CI/CD, Full-Stack).">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Fonts (lightweight weights for performance) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Scroll progress -->
+  <div class="progress" aria-hidden="true"><span class="bar"></span></div>
 
-<header>
-  <h1>Kalpana Shavla</h1>
-  <p>Frontend Developer | Software Tester (QA)</p>
-</header>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="Go to top">
+      <span class="cube cube--brand" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <strong>Kalpana<span> Shavla P</span></strong>
+    </a>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#frontend">Frontend</a>
-  <a href="#testing">Testing</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <button class="nav-toggle" aria-controls="nav" aria-expanded="false">
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+      <span class="nav-toggle__line"></span>
+    </button>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I'm a Computer Science Engineering student passionate about Frontend Development and Software Testing.
-    I love creating clean web interfaces and testing applications for performance and bugs. I'm looking for opportunities to grow as a fresher in either domain.
-  </p>
-  <p><strong>Skills:</strong> HTML, CSS, JavaScript, Angular, Python, MySQL, Manual Testing, Excel, Power BI</p>
-  <a class="button" href="https://drive.google.com/file/d/1URTQNjEj9U4yl9fzyzPYHb82mSCN1vE-/view?usp=drivesdk" target="_blank">Download Resume</a>
-</section>
+    <nav id="nav" class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certs">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section id="frontend">
-  <h2>Frontend Projects</h2>
+  <!-- Hero -->
+  <section id="home" class="section hero reveal">
+    <div class="hero__bg" aria-hidden="true">
+      <!-- Floating 3D cubes (icons) -->
+      <div class="cube cube--float c1"><span class="face f1"></span><span class="face f2"></span><span class="face f3"></span><span class="face f4"></span><span class="face f5"></span><span class="face f6"></span></div>
+      <div class="cube cube--float c2"><span class="face f1"></span><span class="face f2"></span><span class="face f3"></span><span class="face f4"></span><span class="face f5"></span><span class="face f6"></span></div>
+      <div class="cube cube--float c3"><span class="face f1"></span><span class="face f2"></span><span class="face f3"></span><span class="face f4"></span><span class="face f5"></span><span class="face f6"></span></div>
+    </div>
 
-<div class="project">
-  <h2>Faculty Leave Management System (Frontend)</h2>
-  <p>This is a frontend web application built using React. It allows faculty to log in, submit leave requests, and view leave status. Test cases were also written for key functionalities like login validation, leave request submission, and bug reporting.</p>
-  <ul>
-    <li>✅ Built with React, HTML, CSS</li>
-    <li>✅ Functional login and leave request forms</li>
-    <li>✅ Responsive UI</li>
-    <li>✅ Test cases documented (PDF/Excel)</li>
-  </ul>
-   <a href="https://kalpana-shavla5.github.io/faculty-leave-management/" target="_blank">🌐 Live Demo</a><br>
-  <a href="https://github.com/kalpana-shavla5/faculty-leave-management" target="_blank">📁 GitHub Code</a>
-  <a href="/downloads/TestCases.xlsx" download>📄 Test Cases Document</a>
-</div>
+    <div class="hero__content">
+      <p class="eyebrow">Web Developer • WordPress • CI/CD</p>
+      <h1 class="title">
+        Building fast, responsive, <span class="accent">human-friendly</span> web apps.
+      </h1>
+      <p class="subtitle">
+        I’m a Chennai-based developer with hands-on experience in frontend, backend, and WordPress.
+        I automate deployments with GitHub Actions and ship clean UI/UX.
+      </p>
+      <div class="hero__cta">
+        <a class="btn btn--primary" href="#projects">See Projects</a>
+        <a class="btn btn--ghost" href="#contact">Contact Me</a>
+      </div>
 
-</section>
+      <ul class="quick-links">
+        <li><a href="mailto:kalpanashavla5@gmail.com">kalpanashavla5@gmail.com</a></li>
+        <li><a href="https://www.linkedin.com/in/kalpana-shavla-purushothaman" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://kalpana-shavla5.github.io/protofolio/" target="_blank" rel="noopener">GitHub Pages</a></li>
+      </ul>
+    </div>
+  </section>
 
-<section id="testing">
-  <h2>Software Testing Projects</h2>
+  <!-- About -->
+  <section id="about" class="section section--alt grid-2 reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>About Me</h2>
+    </header>
+    <div class="about__content card tilt">
+      <p>
+        Passionate Web Developer with 1+ year of professional experience in frontend, backend,
+        and WordPress development. Proficient in designing, building, and testing responsive
+        web apps with modern stacks. Experienced with GitHub Actions for CI/CD, WordPress customization,
+        and version control workflows. Strong in HTML, CSS, JavaScript, Python, MySQL, and deployment pipelines.
+        Collaborative, security-minded, and focused on performance & usability.
+      </p>
 
-  <div class="project">
-    <h3>Faculty Leave Management System – QA</h3>
-    <p>
-      This project includes test documentation for two main modules: Login and Leave Request. Each module was tested using detailed test cases and bug tracking reports.
-    </p>
-    <a class="button" href="https://docs.google.com/spreadsheets/d/1AxvFU8J5g12RP7FDrsGBh2RPr1iN6YQI/edit?gid=1911443318#gid=1911443318" target="_blank">Login Module – Test Cases</a>
-    <a class="button" href="https://docs.google.com/spreadsheets/d/1CBtvttqlUhPxKdBYVgO8rXjjRmUYqhx6/edit?gid=1503145404#gid=1503145404" target="_blank">Leave Module – Test Cases</a>
-    <a class="button" href="https://docs.google.com/spreadsheets/d/1lnsauAVBGjEbi-y6MHL39A5gASkzO0DQ/edit?gid=2032184583#gid=2032184583" target="_blank">Bug Report Document</a>
-  </div>
+      <div class="pill-list">
+        <span class="pill">Web Development</span>
+        <span class="pill">WordPress Design</span>
+        <span class="pill">CI/CD Automation</span>
+        <span class="pill">Full-Stack Projects</span>
+        <span class="pill">UI/UX Enhancement</span>
+      </div>
 
+      <ul class="meta">
+        <li><strong>Location:</strong> Chromepet, Chennai, TN</li>
+        <li><strong>Email:</strong> <a href="mailto:kalpanashavla5@gmail.com">kalpanashavla5@gmail.com</a></li>
+        <li><strong>Phone:</strong> <a href="tel:+917200293241">+91 72002 93241</a></li>
+      </ul>
+    </div>
 
-<section id="contact">
-  <h2>Contact</h2>
-  <p>Email: kalpanashavla5@gmail.com</p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/kalpana-shavla-purushothaman" target="_blank">linkedin.com/in/kalpana-shavla-purushothaman</a></p>
-</section>
+    <aside class="about__side card tilt">
+      <h3 class="mono">Soft Skills</h3>
+      <div class="tags">
+        <span>Collaboration</span><span>Problem Solving</span><span>Communication</span>
+        <span>Adaptability</span><span>Analytical Thinking</span><span>Time Management</span>
+      </div>
+      <h3 class="mono">Languages</h3>
+      <div class="tags">
+        <span>Tamil (Native)</span><span>English (Fluent)</span>
+      </div>
+    </aside>
+  </section>
 
-<footer>
-  <p>&copy; 2025 Kalpana Shavla. All rights reserved.</p>
-</footer>
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Technical Skills</h2>
+    </header>
 
+    <div class="skills scroller">
+      <article class="skill card tilt">
+        <h3>Frontend</h3>
+        <p>HTML5, CSS3, JavaScript, AJAX, Responsive Design, Cross-Browser, DOM, Basic UI/UX.</p>
+      </article>
+      <article class="skill card tilt">
+        <h3>Backend</h3>
+        <p>Python, MySQL, PHP (basic), REST API integration.</p>
+      </article>
+      <article class="skill card tilt">
+        <h3>Testing & QA</h3>
+        <p>Manual testing, test cases, bug reporting, Excel (VLOOKUP, Pivot), Power BI.</p>
+      </article>
+      <article class="skill card tilt">
+        <h3>CMS</h3>
+        <p>WordPress: Theme customization, plugin management, Elementor.</p>
+      </article>
+      <article class="skill card tilt">
+        <h3>DevOps & Tools</h3>
+        <p>Git, GitHub, GitHub Actions (CI/CD), VS Code.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section section--alt reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Professional Experience</h2>
+    </header>
+
+    <div class="timeline">
+      <div class="timeline__item card tilt">
+        <h3>Web Developer — VIPS.Tech</h3>
+        <p class="muted">Apr 2024 – Present • Chennai</p>
+        <ul>
+          <li>Designed & deployed responsive apps (HTML, CSS, JS, Python, MySQL).</li>
+          <li>Implemented GitHub Actions for automated build/test/deploy, cutting errors.</li>
+          <li>Built & maintained WordPress sites with theme customization & optimized plugins.</li>
+          <li>Collaborated with designers to improve UX & engagement metrics.</li>
+          <li>Code reviews & unit tests, reducing defects by 30%.</li>
+          <li>Documented specs, APIs, and deployment configs.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Highlighted Projects</h2>
+    </header>
+
+    <div class="masonry">
+      <article class="tile card tilt">
+        <h3>WordPress Company Portal</h3>
+        <ul>
+          <li>Theme customized to company branding.</li>
+          <li>Dynamic modules via Elementor + custom PHP.</li>
+          <li>CI/CD with GitHub Actions; 50% downtime reduction.</li>
+        </ul>
+      </article>
+
+      <article class="tile card tilt">
+        <h3>LMS (Learning Management System)</h3>
+        <ul>
+          <li>WordPress-based LMS aligned with UI standards.</li>
+          <li>Elementor, PHP & MySQL for course management.</li>
+          <li>CI/CD pipelines improved release efficiency.</li>
+        </ul>
+      </article>
+
+      <article class="tile card tilt">
+        <h3>Faculty Leave Management (Full-Stack)</h3>
+        <ul>
+          <li>CRUD app using HTML, CSS, JS, MySQL.</li>
+          <li>Multi-role access + backend validations.</li>
+        </ul>
+      </article>
+
+      <article class="tile card tilt">
+        <h3>Driver Behaviour Monitoring (IoT + Web)</h3>
+        <ul>
+          <li>Realtime metrics dashboard.</li>
+          <li>Python backend processed sensor data.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section section--alt reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Education</h2>
+    </header>
+
+    <div class="edu-grid">
+      <article class="edu card tilt">
+        <h3>B.E. — Computer Science Engineering</h3>
+        <p>Jerusalem College of Engineering, Chennai</p>
+        <p class="muted">2022 – 2025 • CGPA: 7.6</p>
+      </article>
+      <article class="edu card tilt">
+        <h3>Diploma — Computer Science</h3>
+        <p>IRT Polytechnic College</p>
+        <p class="muted">2019 – 2022 • 86%</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certs" class="section reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Certificates</h2>
+    </header>
+
+    <div class="carousel">
+      <div class="card tilt">
+        <h3>Frontend Development — Udemy</h3>
+      </div>
+      <div class="card tilt">
+        <h3>GitHub Actions & CI/CD — Coursera</h3>
+      </div>
+      <div class="card tilt">
+        <h3>WordPress Development — LinkedIn Learning</h3>
+      </div>
+      <div class="card tilt">
+        <h3>QA Process Training — Self Learning</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section section--alt reveal">
+    <header class="section__head">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <h2>Contact</h2>
+    </header>
+
+    <div class="contact card tilt">
+      <p class="lead">Let’s collaborate. I’m open to internships, freelance, and full-time roles.</p>
+
+      <form class="contact__form" name="contact" autocomplete="on">
+        <div class="field">
+          <label for="name">Your Name</label>
+          <input id="name" name="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="message" rows="4" placeholder="Tell me about your project…" required></textarea>
+        </div>
+        <button class="btn btn--primary" type="submit">Send Message</button>
+        <p class="form-note">or write directly: <a href="mailto:kalpanashavla5@gmail.com">kalpanashavla5@gmail.com</a></p>
+      </form>
+
+      <div class="contact__links">
+        <a class="link" href="https://kalpana-shavla5.github.io/protofolio/" target="_blank" rel="noopener">Portfolio (GitHub Pages)</a>
+        <a class="link" href="https://www.linkedin.com/in/kalpana-shavla-purushothaman" target="_blank" rel="noopener">LinkedIn</a>
+        <!-- If you host the PDF in the same folder, rename to resume.pdf -->
+        <!-- <a class="link" href="./resume.pdf" target="_blank" rel="noopener">Download Résumé (PDF)</a> -->
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer__brand">
+      <span class="cube" aria-hidden="true">
+        <span class="face f1"></span><span class="face f2"></span><span class="face f3"></span>
+        <span class="face f4"></span><span class="face f5"></span><span class="face f6"></span>
+      </span>
+      <strong>Kalpana Shavla P</strong>
+    </div>
+    <p class="muted">© <span id="year"></span> — Crafted with clean code & accessibility in mind.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
 
 
